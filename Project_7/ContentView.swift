@@ -8,14 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var numbers = [Int]()
+    @State private var currentNumber = 0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                ForEach(numbers, id: \.self) {
+                    Text("Row \($0)")
+                }
+                .onDelete(perform: removeRows)
+//                .onDelete(perform: { indexSet in
+//                    numbers.remove(atOffsets: indexSet)
+//                })
+            }
+            .toolbar {
+                EditButton()
+            }
+            
+            Button("Add Number") {
+                currentNumber += 1
+                numbers.append(currentNumber)
+            }
         }
-        .padding()
+    }
+    
+    func removeRows(offset: IndexSet) {
+        numbers.remove(atOffsets: offset)
     }
 }
 
