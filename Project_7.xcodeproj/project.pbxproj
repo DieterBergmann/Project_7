@@ -11,6 +11,8 @@
 		B2400E0C2B9451A60023F3D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2400E0B2B9451A60023F3D0 /* ContentView.swift */; };
 		B2400E0E2B9451A70023F3D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2400E0D2B9451A70023F3D0 /* Assets.xcassets */; };
 		B2400E122B9451A70023F3D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2400E112B9451A70023F3D0 /* Preview Assets.xcassets */; };
+		B27455FF2B96E6F700AF33F6 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27455FE2B96E6F700AF33F6 /* ExpenseItem.swift */; };
+		B27456022B96E7B700AF33F6 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27456012B96E7B700AF33F6 /* Expenses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		B2400E0D2B9451A70023F3D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2400E0F2B9451A70023F3D0 /* Project_7.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Project_7.entitlements; sourceTree = "<group>"; };
 		B2400E112B9451A70023F3D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B27455FE2B96E6F700AF33F6 /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
+		B27456012B96E7B700AF33F6 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				B2400E092B9451A60023F3D0 /* Project_7App.swift */,
-				B2400E0B2B9451A60023F3D0 /* ContentView.swift */,
+				B27455FD2B96E6D700AF33F6 /* View */,
+				B27456032B96E80A00AF33F6 /* ViewModel */,
+				B27456002B96E70200AF33F6 /* Model */,
 				B2400E0D2B9451A70023F3D0 /* Assets.xcassets */,
 				B2400E0F2B9451A70023F3D0 /* Project_7.entitlements */,
 				B2400E102B9451A70023F3D0 /* Preview Content */,
@@ -67,6 +73,30 @@
 				B2400E112B9451A70023F3D0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B27455FD2B96E6D700AF33F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2400E0B2B9451A60023F3D0 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B27456002B96E70200AF33F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B27455FE2B96E6F700AF33F6 /* ExpenseItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B27456032B96E80A00AF33F6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B27456012B96E7B700AF33F6 /* Expenses.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +169,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B27456022B96E7B700AF33F6 /* Expenses.swift in Sources */,
 				B2400E0C2B9451A60023F3D0 /* ContentView.swift in Sources */,
+				B27455FF2B96E6F700AF33F6 /* ExpenseItem.swift in Sources */,
 				B2400E0A2B9451A60023F3D0 /* Project_7App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
